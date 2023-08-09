@@ -1,17 +1,37 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int dogumYili;
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Scanner input = new Scanner(System.in);
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        System.out.print("Doğum yılınızı giriniz: ");
+        dogumYili = input.nextInt();
+
+        if (dogumYili % 12 == 0) {
+            System.out.print("Zodyağınız Maymun");
+        } else if (dogumYili % 12 == 1) {
+            System.out.print("Zodyağınız Horoz");
+        } else if (dogumYili % 12 == 2) {
+            System.out.print("Zodyağınız Köpek");
+        } else if (dogumYili % 12 == 3) {
+            System.out.print("Zodyağınız Domuz");
+        } else if (dogumYili % 12 == 4) {
+            System.out.print("Zodyağınız Fare");
+        } else if (dogumYili % 12 == 5) {
+            System.out.print("Zodyağınız Öküz");
+        } else if (dogumYili % 12 == 6) {
+            System.out.print("Zodyağınız Kaplan");
+        } else if (dogumYili % 12 == 7) {
+            System.out.print("Zodyağınız Tavşan");
+        } else if (dogumYili % 12 == 8) {
+            System.out.print("Zodyağınız Ejderha");
+        } else if (dogumYili % 12 == 9) {
+            System.out.print("Zodyağınız Yılan");
+        } else if (dogumYili % 12 == 10) {
+            System.out.print("Zodyağınız At");
+        } else if (dogumYili % 12 == 11) {
+            System.out.print("Zodyağınız Koyun");
         }
     }
 }
